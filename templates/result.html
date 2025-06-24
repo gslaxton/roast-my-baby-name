@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Roast</title>
+    <meta charset="UTF-8">
+    <title>Here's the Roast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #f2f2f2;
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            background-color: #1e1e1e;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(255, 107, 107, 0.2);
+        }
+
+        .result-block {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li::before {
+            content: "🔥 ";
+        }
+
+        a {
+            color: #ff6b6b;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>🔥 Here’s the Roast</h1>
-    <p>{{ roast }}</p>
-    <a href="/">Go Back</a>
+    <h1>🔥 Here's the Roast</h1>
+    <div class="container">
+        <div class="result-block">
+            {{ roast | safe }}
+        </div>
+        <a href="/">⬅️ Go Back</a>
+    </div>
 </body>
 </html>
