@@ -21,13 +21,12 @@ You are a sarcastic, witty baby name critic. Someone submitted a baby's name.
 Name: {first_name}
 Surname: {surname}
 
-1. Roast the name brutally but hilariously.
-2. Suggest 2-3 ridiculous nicknames.
+1. Roast the name brutally but hilariously, don't hold back, make it tear worthy.
+2. Suggest 2-3 ridiculous but mean nicknames. Something a really nasty teenager would come up.
 3. Suggest 2-3 better firstnames and say why they are better. 
 4. Describe what kind of person this baby might grow up to be.
-5. Roast the name extremely harshly, don't hold back, make it tear worthy. 
 
-Keep points 1 to 4 funny and meme-worthy.
+Keep it funny and meme-worthy.
 """
 
     response = client.chat.completions.create(
