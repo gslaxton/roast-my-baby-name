@@ -10,6 +10,10 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 def index():
     return render_template("index.html")
 
+@app.route("/ads.txt")
+def ads():
+    return app.send_static_file("ads.txt")
+
 @app.route("/generate", methods=["POST"])
 def generate():
     first_name = request.form.get("first_name")
