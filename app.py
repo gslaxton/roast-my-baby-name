@@ -33,7 +33,7 @@ Keep it funny and meme-worthy.
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.9,
-        max_tokens=500,
+        max_tokens=800,
     )
 
     result_raw = response.choices[0].message.content.strip()
